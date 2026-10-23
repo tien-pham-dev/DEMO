@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dự Án Cá Nhân - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="progress-bar"></div>
+
+  <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">MyPortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#projects">Dự án</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Liên hệ</a></li>
+          <li class="nav-item ms-lg-3">
+            <button id="theme-toggle" class="btn btn-outline-secondary btn-sm" type="button">🌙 Chế độ tối</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-5 text-center container">
+    <h1 class="display-4 fw-bold">Xin chào, Tôi là Lập Trình Viên!</h1>
+    <p class="lead text-muted">Trang web cá nhân thể hiện các sản phẩm và kỹ năng lập trình web.</p>
+  </header>
+
+  <main class="container my-5" id="projects">
+    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+      <h2 class="h3 fw-bold mb-0">Danh sách Dự án</h2>
+      <div class="search-box">
+        <input type="text" id="search-box" class="form-control" placeholder="Tìm kiếm dự án...">
+      </div>
+    </div>
+
+    <div class="row g-4" id="project-list">
+      <div class="col-md-4 card-item">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Ứng dụng Web E-commerce</h5>
+            <p class="card-text">Hệ thống bán hàng trực tuyến tích hợp giỏ hàng và thanh toán trực tuyến.</p>
+            <span class="badge bg-primary">React</span>
+            <span class="badge bg-secondary">Node.js</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 card-item">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Trang Tin Tức Tự Động</h5>
+            <p class="card-text">Tổng hợp tin tức công nghệ từ các nguồn uy tín thông qua REST API.</p>
+            <span class="badge bg-success">Vue.js</span>
+            <span class="badge bg-dark">Python</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 card-item">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Quản Lý Công Việc (Task App)</h5>
+            <p class="card-text">Ứng dụng kéo thả ghi chú công việc hàng ngày tối ưu hiệu suất.</p>
+            <span class="badge bg-warning text-dark">JavaScript</span>
+            <span class="badge bg-info text-dark">Bootstrap</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="container my-5 py-4 border-top" id="contact">
+    <h2 class="h3 fw-bold mb-4">Gửi Phản Hồi</h2>
+    <form class="needs-validation" id="contact-form" novalidate>
+      <div class="mb-3">
+        <label for="userName" class="form-label">Họ và Tên</label>
+        <input type="text" class="form-control" id="userName" required>
+        <div class="invalid-feedback">Vui lòng nhập họ và tên của bạn.</div>
+      </div>
+      <div class="mb-3">
+        <label for="userEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="userEmail" required>
+        <div class="invalid-feedback">Vui lòng nhập địa chỉ email hợp lệ.</div>
+      </div>
+      <div class="mb-3">
+        <label for="userMessage" class="form-label">Nội dung</label>
+        <textarea class="form-control" id="userMessage" rows="4" required></textarea>
+        <div class="invalid-feedback">Vui lòng nhập nội dung tin nhắn.</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Gửi Tin Nhắn</button>
+    </form>
+  </section>
+
+  <footer class="text-center py-4 text-muted border-top">
+    <p class="mb-0">&copy; 2026 MyPortfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
